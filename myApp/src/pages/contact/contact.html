@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Contact
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+  	<!--*ngFor 和 *ngIf 不能放置在同一个标签上-->
+    <ng-container *ngFor="let item of data">
+      <ion-item *ngIf="item.gender===1">
+        <ion-avatar  item-start>
+          <img src="{{item.avatar}}">
+        </ion-avatar>
+        <h2>{{item.name}}</h2>
+        <p>{{item.description}}</p>
+        <p item-end>{{item.gender?'男':'女'}}, {{2017 - item.birthYear}} 岁</p>
+      </ion-item>
+    </ng-container>
+  </ion-list>
+</ion-content>
