@@ -1,17 +1,17 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>首页</ion-title>
+    <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-	<!--将方法绑定到按钮点击事件-->
-  <button ion-button (click)="pushTestPage()">喜欢我就点我呀</button>
-  <ion-item>
-      <ion-label fixed>Name</ion-label>
-      <!--[(ngModel)] 就是将表单和页面组件绑定在一起-->
-      <!--对于Radio空间，[(ngModel)]并非直接加在 ion-radio 标签上，而是加在绑定了 ion-radio-group 指令的 ion-list 标签上。-->
-      <ion-input type="text" [(ngModel)]="name"></ion-input>
-  </ion-item>
-  <button ion-button round (click)="logout()">退出登录</button>
+  <h2>Welcome to Ionic!</h2>
+  <p>
+    This starter project comes with simple tabs-based layout for apps
+    that are going to primarily use a Tabbed UI.
+  </p>
+  <p>
+    Take a look at the <code>src/pages/</code> directory to add or change tabs,
+    update any existing page or create new pages.
+  </p>
 </ion-content>
